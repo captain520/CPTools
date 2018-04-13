@@ -33,6 +33,9 @@
 		9C67F2A1207CA025001EDF9D /* CPBaseTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C67F2A0207CA025001EDF9D /* CPBaseTableVC.m */; };
 		9C67F2A4207CA073001EDF9D /* CPRefreshTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C67F2A3207CA073001EDF9D /* CPRefreshTableVC.m */; };
 		9C67F2A7207CA2D0001EDF9D /* CPLeftRightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C67F2A6207CA2D0001EDF9D /* CPLeftRightCell.m */; };
+		9C6D1B1B20808BB3004336D0 /* CPToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6D1B1A20808BB3004336D0 /* CPToast.m */; };
+		9C6D1B1E20809104004336D0 /* CPListTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6D1B1D20809104004336D0 /* CPListTableView.m */; };
+		9C6D1B212080AE6A004336D0 /* CPTestCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6D1B202080AE6A004336D0 /* CPTestCollectionView.m */; };
 		9CE61049207CC49800876B03 /* CPSpeech.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE61048207CC49800876B03 /* CPSpeech.m */; };
 		9CE6104C207CC7F600876B03 /* CPCall.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE6104B207CC7F600876B03 /* CPCall.m */; };
 		D7E92C04A02D30AFBDC399E1 /* libPods-CPTools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CDBF55805182A73B6FAACB23 /* libPods-CPTools.a */; };
@@ -90,6 +93,12 @@
 		9C67F2A3207CA073001EDF9D /* CPRefreshTableVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPRefreshTableVC.m; sourceTree = "<group>"; };
 		9C67F2A5207CA2D0001EDF9D /* CPLeftRightCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPLeftRightCell.h; sourceTree = "<group>"; };
 		9C67F2A6207CA2D0001EDF9D /* CPLeftRightCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPLeftRightCell.m; sourceTree = "<group>"; };
+		9C6D1B1920808BB3004336D0 /* CPToast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPToast.h; sourceTree = "<group>"; };
+		9C6D1B1A20808BB3004336D0 /* CPToast.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPToast.m; sourceTree = "<group>"; };
+		9C6D1B1C20809104004336D0 /* CPListTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPListTableView.h; sourceTree = "<group>"; };
+		9C6D1B1D20809104004336D0 /* CPListTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPListTableView.m; sourceTree = "<group>"; };
+		9C6D1B1F2080AE6A004336D0 /* CPTestCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPTestCollectionView.h; sourceTree = "<group>"; };
+		9C6D1B202080AE6A004336D0 /* CPTestCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPTestCollectionView.m; sourceTree = "<group>"; };
 		9CE61047207CC49800876B03 /* CPSpeech.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPSpeech.h; sourceTree = "<group>"; };
 		9CE61048207CC49800876B03 /* CPSpeech.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPSpeech.m; sourceTree = "<group>"; };
 		9CE6104A207CC7F600876B03 /* CPCall.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPCall.h; sourceTree = "<group>"; };
@@ -178,6 +187,10 @@
 		9C634BDA207F2738006F2584 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9C6D1B1C20809104004336D0 /* CPListTableView.h */,
+				9C6D1B1D20809104004336D0 /* CPListTableView.m */,
+				9C6D1B1F2080AE6A004336D0 /* CPTestCollectionView.h */,
+				9C6D1B202080AE6A004336D0 /* CPTestCollectionView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -252,6 +265,8 @@
 				9C634BC4207EEE6C006F2584 /* CPCheckTextField.m */,
 				9C634BCA207EF9F3006F2584 /* CPImageView.h */,
 				9C634BCB207EF9F3006F2584 /* CPImageView.m */,
+				9C6D1B1920808BB3004336D0 /* CPToast.h */,
+				9C6D1B1A20808BB3004336D0 /* CPToast.m */,
 			);
 			path = "基类";
 			sourceTree = "<group>";
@@ -409,10 +424,13 @@
 				9C67F282207C9DA8001EDF9D /* CPView.m in Sources */,
 				9C67F279207C9D50001EDF9D /* main.m in Sources */,
 				9C634BD6207F0055006F2584 /* UIView+Toast.m in Sources */,
+				9C6D1B212080AE6A004336D0 /* CPTestCollectionView.m in Sources */,
 				9C67F2A1207CA025001EDF9D /* CPBaseTableVC.m in Sources */,
 				9C634BC5207EEE6C006F2584 /* CPCheckTextField.m in Sources */,
 				9C67F29E207CA00A001EDF9D /* CPBaseVC.m in Sources */,
 				9C67F28B207C9DD4001EDF9D /* CPWebView.m in Sources */,
+				9C6D1B1E20809104004336D0 /* CPListTableView.m in Sources */,
+				9C6D1B1B20808BB3004336D0 /* CPToast.m in Sources */,
 				9C67F294207C9E05001EDF9D /* CPTableViewCell.m in Sources */,
 				9C67F297207C9E1E001EDF9D /* CPTableViewHeaderFooterView.m in Sources */,
 				9C67F2A7207CA2D0001EDF9D /* CPLeftRightCell.m in Sources */,

@@ -10,4 +10,6 @@
 
 @interface CPButton : UIButton
 
+@property (nonatomic, copy) void (^actionBlock)(void);
+
 @end

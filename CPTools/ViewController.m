@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "CPLeftRightCell.h"
+#import "CPListTableView.h"
 
 @interface ViewController ()
 
@@ -58,10 +59,28 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    
+
     NSDictionary *configDict = self.models[indexPath.row];
-    
+
     [self push2VCWith:configDict[@"className"] title:configDict[@"classDes"]];
+    
+//    CPLeftRightCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+//    
+//    CGRect frame = [cell convertRect:cell.bounds toView:tableView];
+//    CGRect tFrame = CGRectMake(frame.size.width/2, frame.origin.y + frame.size.height, 100, 200);
+//
+//    CPListTableView *tb = [[CPListTableView alloc] initWithFrame:tFrame style:UITableViewStyleGrouped dataArray:@[@"1",@"2",@"3",@"4",@"5"]];;
+//    tb.layer.shadowColor = UIColor.greenColor.CGColor;
+//    tb.layer.shadowOffset = CGSizeMake(5, 5);
+//    tb.layer.shadowRadius = 5;
+//    tb.layer.shadowOpacity = 0.5f;
+//    
+//    [tableView addSubview:tb];
+//    
+//    [UIView animateWithDuration:.250f animations:^{
+//       tb.frame = CGRectMake(frame.size.width/2, frame.origin.y + frame.size.height, 100, 200);
+//    }];
+
 }
 
 
