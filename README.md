@@ -10,4 +10,5 @@ _checkTF.errorMsg = @"电话号码错误,请校对您输入的电话号码是否
 
 [self.view addSubview:_checkTF];
 ```
-    
+    
+[简书地址](https://www.jianshu.com/p/2899ca1950d9)
