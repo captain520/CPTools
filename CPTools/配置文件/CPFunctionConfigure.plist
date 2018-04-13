@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>className</key>
+		<string>ClassString</string>
+		<key>functionDes</key>
+		<string>测试功能</string>
+		<key>other</key>
+		<string>other</string>
+	</dict>
+	<dict>
+		<key>className</key>
+		<string>CPTextFieldTestVC</string>
+		<key>functionDes</key>
+		<string>测试输入框提示功能</string>
+		<key>other</key>
+		<string>other</string>
+	</dict>
+</array>
+</plist>

@@ -1,0 +1,88 @@
+//
+//  CPTool.pch
+//  CPTools
+//
+//  Created by wangzhangchuan on 2018/4/12.
+//  Copyright © 2018年 Captain. All rights reserved.
+//
+
+#ifndef CPTool_pch
+#define CPTool_pch
+
+#import <CocoaLumberjack.h>
+#import <Masonry.h>
+
+#import "UIView+Toast.h"
+#import "UIColor+category.h"
+#import "UIImage+Category.h"
+
+#import "CPView.h"
+#import "CPLabel.h"
+#import "CPImageView.h"
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+/********************************************* 打印日志设置 *******************************************************/
+#ifdef DEBUG
+
+static const int ddLogLevel = DDLogLevelInfo;
+
+#else
+
+static const int ddLogLevel = DDLogLevelError;
+
+#endif
+
+#define NSLog(format, ...)
+
+/********************************************* Frame 宏设置 *******************************************************/
+
+#define SCREENWIDTH         ([UIScreen      mainScreen].bounds.size.width)
+#define SCREENHEIGHT        ([UIScreen      mainScreen].bounds.size.height)
+#define CPStatusBarHeight   ([UIApplication sharedApplication].statusBarFrame.size.height)
+
+#define NAV_HEIGHT   (44.0f + [UIApplication sharedApplication].statusBarFrame.size.height)
+
+#define cellSpaceOffset       16
+#define CELL_HEIGHT_F         (44.0f)
+#define SMALL_CELL_HEIGHT_F   (20.0f)
+#define CPTOP_BOTTOM_OFFSET_F (4.0F)
+#define CPBASETAG             (9527)
+#define CPBoardWidth          (0.5f)
+
+/********************************************* 字体宏设置 *******************************************************/
+
+#define CPFont(x)           [UIFont systemFontOfSize:x]
+#define CPBoldFont(x)       [UIFont boldSystemFontOfSize:x]
+#define CPFont_XL                   CPFont(17)
+#define CPFont_L                    CPFont(15)
+#define CPFont_M                    CPFont(13)
+#define CPFont_S                    CPFont(11)
+
+#define CPBoldFont_XL               CPBoldFont(18)
+#define CPBoldFont_L                CPBoldFont(15)
+#define CPBoldFont_M                CPBoldFont(13)
+#define CPBoldFont_S                CPBoldFont(11)
+
+/********************************************* 颜色宏设置 *******************************************************/
+
+#define HEXCOLOR(x)            (([UIColor colorWithHexString:x]))
+
+#define C33                      (HEXCOLOR(@"#333333"))
+#define C66                      (HEXCOLOR(@"#666666"))
+#define C99                      (HEXCOLOR(@"#999999"))
+#define Ccc                      (HEXCOLOR(@"#cccccc"))
+#define C00                      (HEXCOLOR(@"#000000"))
+#define Cff                      (HEXCOLOR(@"#ffffff"))
+
+#define CPBordColor         [UIColor redColor]
+
+/********************************************* 字体宏设置 *******************************************************/
+/********************************************* 字体宏设置 *******************************************************/
+
+
+#define CPImage(x)          [UIImage imageNamed:x]
+
+
+#endif /* CPTool_pch */
